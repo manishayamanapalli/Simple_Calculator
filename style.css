@@ -1,0 +1,118 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+background: linear-gradient(135deg, #fd092a, #6dd5ed, #f16f0c);
+
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+header {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+  color: rgba(14, 3, 3, 0.653);
+}
+
+header p {
+  font-size: 16px;
+  opacity: 0.8;
+  color: black;
+}
+
+/* Calculator container */
+.calculator {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  width: 320px;
+}
+
+/* Display */
+.calculator input {
+  width: 90%;
+  height: 60px;
+  font-size: 28px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  text-align: right;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Base Button Styles */
+button {
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Number buttons */
+button:not(.operator):not(#equal):not(#clear) {
+  background: linear-gradient(to bottom right, #29aff7, #d73c8c);
+}
+
+/* Operator buttons */
+button.operator {
+  background: linear-gradient(to bottom right, #ff6a00, #922e5f);
+}
+
+/* Equals button */
+button#equal {
+  background: linear-gradient(to bottom right, #00b09b, #28308b);
+}
+
+/* Clear button */
+button#clear {
+  background: linear-gradient(to bottom right, #a95c69, #cfc723);
+}
+
+/* Hover and Active States */
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Footer */
+footer {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  opacity: 0.6;
+}

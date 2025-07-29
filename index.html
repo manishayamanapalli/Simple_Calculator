@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Super Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🔢 Super Calculator</h1>
+    <p>Designed using HTML, CSS, and JavaScript with ❤️</p>
+  </header>
+
+  <!-- Calculator -->
+  <div class="calculator">
+    <input type="text" placeholder="0" readonly />
+
+    <div class="buttons">
+      <button onclick="display('7')">7</button>
+      <button onclick="display('8')">8</button>
+      <button onclick="display('9')">9</button>
+      <button class="operator" onclick="display('+')">+</button>
+
+      <button onclick="display('4')">4</button>
+      <button onclick="display('5')">5</button>
+      <button onclick="display('6')">6</button>
+      <button class="operator" onclick="display('-')">-</button>
+
+      <button onclick="display('1')">1</button>
+      <button onclick="display('2')">2</button>
+      <button onclick="display('3')">3</button>
+      <button class="operator" onclick="display('*')">*</button>
+
+      <button onclick="display('0')">0</button>
+      <button id="clear" onclick="clearr()">C</button>
+      <button id="equal" onclick="res()">=</button>
+      <button class="operator" onclick="display('/')">/</button>
+    </div>
+  </div>
+
+ 
+
+  <script src="calc.js"></script>
+</body>
+</html>
